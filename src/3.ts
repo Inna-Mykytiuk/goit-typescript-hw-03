@@ -26,15 +26,15 @@ class Wizard implements ICharacter, ISpellCaster {
     }
   }
 
-  introduce(phrase: string): void {
+  introduce(phrase: string) {
     console.log(phrase + ', ' + this.name);
   }
 
-  castSpell(): void {
+  castSpell() {
     console.log('Casting a spell, behold my power!');
   }
 
-  levelUp(): void {
+  levelUp() {
     this.level++;
     console.log(`Level up! New level is ${this.level}`);
   }
